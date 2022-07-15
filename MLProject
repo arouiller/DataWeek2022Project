@@ -1,15 +1,18 @@
 name: primer-proyecto
+
+conda_env: env.yaml
+
 entry_points:
     holauser:
         parameters:
             nombre: {type: string, default: Alejandro}
             repeticiones: {type: int, default: 1}
-        command: 'python holauser.py --name {nombre} --repeticiones {repeticiones}'
+        command: 'python c://directorio//holauser.py --name {nombre} --repeticiones {repeticiones}'
 
     prediccion:
         parameters:
             alpha: {type: float, default: 0.1}
             l1_ratio: {type: float, default: 0.1}
             data_file: {type: string, default: 'c:\\database\\winedata\\winequality-red.csv'}
-        command: 'python MLFlow_Project_Regresion.py --alpha {alpha} --l1_ratio {l1_ratio} --data_file {data_file}'
+        command: 'python 2.MLProyectoLocal\\MLFlow_Project_Regresion.py --alpha {alpha} --l1_ratio {l1_ratio} --data_file {data_file}'
 
