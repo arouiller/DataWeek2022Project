@@ -7,7 +7,7 @@ entry_points:
         parameters:
             nombre: {type: string, default: Alejandro}
             repeticiones: {type: int, default: 1}
-        command: 'holauser.py --name {nombre} --repeticiones {repeticiones}'
+        command: 'python holauser.py --name {nombre} --repeticiones {repeticiones}'
 
     prediccion:
         parameters:
