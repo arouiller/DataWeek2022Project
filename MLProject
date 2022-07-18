@@ -16,3 +16,6 @@ entry_points:
             data_file: {type: string, default: 'c:\\database\\winedata\\winequality-red.csv'}
         command: 'python MLFlow_Project_Regresion.py --alpha {alpha} --l1_ratio {l1_ratio} --data_file {data_file}'
 
+    main:
+        command: 'python holauser.py --name Alejandritolin --repeticiones 5'
+
